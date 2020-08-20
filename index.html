@@ -1,20 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="="X-UA-Compatible" content=="ie-"edge">
-  <title>Let's challenge PWA</title>
-  <meta name="description" content-"PWAのサンプル">
-  <link rel="shortcut icon" href="images/favicon.ico">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-atatus-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="PWA Sample">
-  <link rel="apple-touch-icon" href="images/icon-152x152.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPORTHERE</title>
+<link rel="shortcut icon" href="images/common/favicon.ico">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>PWA Sample</h1>
-  <p>PWA に挑戦しましょう！</p>
+	<!-- header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="inner">
+				<div class="header-top-box">
+					<div class="header-top__logo">
+						<img src="images/common/logo.png" alt="SPORTHEREのロゴ画像">
+					</div>
+
+					<div class="header-top__sns">
+						<ul class="sns-icon-list">
+							<li class="sns-icon-item facebook-icon"><a href="#"><img src="images/common/facebook_icon.png" alt="Facebookアイコン"></a></li>
+							<li class="sns-icon-item twitter-icon"><a href="#"><img src="images/common/twitter_icon.png" alt="Twitterアイコン"></a></li>
+							<li class="sns-icon-item google-plus-icon"><a href="#"><img src="images/common/google_plus_icon.png" alt="Googleプラスアイコン"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-main">
+			<div class="inner">
+				<div class="header-main-box">
+					<div class="header-main__info">
+						<h1 class="header-main__info-title">sporthere<br>スポーツ好きのあなたに</h1>
+						<p class="header-main__info-leading">好きなスポーツの情報、コミュニティを<br>一括で管理できるアプリ</p>
+
+						<ul class="header-main__info-list text-center">
+							<li class="header-main__info-item"><a href="#" class="button download">download now</a></li>
+							<li class="header-main__info-item"><a href="#" class="button learn_more">learn more</a></li>
+						</ul>
+					</div>
+
+					<div class="header-main__eyecatch">
+						<img src="images/header/promo.png" alt="スマートフォンの画像">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /header -->
+
+	<!-- main -->
+	<main>
+		<!-- feature -->
+		<section class="feature">
+			<div class="inner text-center">
+				<h2 class="section-title">シンプルでわかりやすいデザイン</h2>
+				
+				<p class="section-paragraph">直感を追求したデザイン。忙しいあなたに、ぴったりのアプリ</p>
+
+				<ul class="feature-list">
+					<li class="feature-item">
+						<div class="feature-item__icon"><img src="images/main/good_icon.png" alt="グッドアイコン"></div>
+						<h3 class="feature-item__title">コミュニティで盛り上がろう</h3>
+						<p class="feature-item__text">コミュニケーション機能で、世界中のスポーツ好きとつながれる。世界中に友達をつくろう</p>
+					</li>
+					<li class="feature-item">
+						<div class="feature-item__icon"><img src="images/main/present_icon.png" alt="プレゼントアイコン"></div>
+						<h3 class="feature-item__title">Sポイントをゲットしよう</h3>
+						<p class="feature-item__text">コメント投稿でSポイントをゲットして、自分の好きなスポーツチケットを手に入れよう</p>
+					</li>
+					<li class="feature-item">
+						<div class="feature-item__icon"><img src="images/main/help_icon.png" alt="ヘルプアイコン"></div>
+						<h3 class="feature-item__title">わからないことはAIに質問しよう</h3>			
+						<p class="feature-item__text">AIチャット搭載。わからないことがあったら、いつでもAIがあなたの疑問を解決</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- /feature -->
+		
+		<!-- universal -->
+		<section class="universal">
+			<div class="inner">
+				<div class="section-box reverse">
+					<div class="section-box__item universal__text">
+						<h2 class="section-title">世界中のスポーツに対応</h2>
+						<p class="section-paragraph">SPORTHEREは全世界のスポーツに対応。マイノリティースポーツでもコミュニティを通じて、世界中に友達をつくれる</p>
+					</div>
+					<div class="section-box__item universal__image">
+						<img src="images/main/soccer.png" alt="サッカーの画像">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /universal -->
+		
+		<!-- information -->
+		<section class="information">
+			<div class="inner text-center">
+				<div class="information-box">
+					<h2 class="section-title">【期間限定】新たなコミュニティを立ち上げる、あなたに朗報</h2>
+					<p class="section-paragraph">SPORTEREは、世界中のスポーツ好きのパッションを応援しています。今、新たなコミュニティを立ち上げるとSポイントを1000ポイントプレゼント。スポーツへのパッションをSPORTHEREでぶつけてみよう</p>
+				</div>
+			</div>
+		</section>
+		<!-- /information -->
+	
+		<!-- subscribe -->
+		<section class="subscribe">
+			<div class="inner text-center">
+				<h2 class="section-title">ニュースレター購読</h2>
+				<form class="subscribe__form-list" method="post" action="example.cgi">
+					<input class="subscribe__form-item email" type="email" name="email" placeholder="Your email adress">
+					<input class="subscribe__form-item submit" type="submit" value="subscribe">
+				</form>
+				<p class="section-paragraph">世界中のスポーツ情報を毎週発信中。みんなと差をつけたいあなたにおすすめ。</p>
+			</div>
+		</section>
+		<!-- /subscribe -->
+	</main>
+	<!-- /main -->
+	
+	<!-- footer -->
+	<footer class="footer">
+		<div class="inner">
+			<div class="footer-box">
+				<div class="footer__logo-icon">
+					<img src="images/common/logo_icon.png" alt="SPORTHEREのロゴアイコン">
+				</div>
+
+				<div class="sp-footer-top">
+				<div class="footer__apple-store">
+					<p class="footer__apple-store-text">
+						<span class="sns-icon-item apple-store-icon"><img src="images/common/app_store_icon.png" alt="AppleStoreアイコン"></span>
+						Available in Apple Store
+					</p>
+				</div>
+				</div>
+
+				<div class="sp-footer-bottom">
+				<div class="footer__copyright">
+					<p><small>Copyright &copy; 2020 <span class="footer__copyright-brand-name">sporthere</span></small></p>
+				</div>
+				
+				<div class="footer__sns">
+					<ul class="sns-icon-list">
+						<li class="sns-icon-item facebook-icon"><a href="#"><img src="images/common/facebook_icon.png" alt="Facebookアイコン"></a></li>
+						<li class="sns-icon-item twitter-icon"><a href="#"><img src="images/common/twitter_icon.png" alt="Twitterアイコン"></a></li>
+						<li class="sns-icon-item google-plus-icon"><a href="#"><img src="images/common/google_plus_icon.png" alt="Googleプラスアイコン"></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /footer -->
 </body>
 </html>

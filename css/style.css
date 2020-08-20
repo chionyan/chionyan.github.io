@@ -1,0 +1,758 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	font-size: 62.5%;/*16px×62.5%=10px*/
+}
+
+body {
+	font-family:'Arial','メイリオ', 'Meiryo','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+	color: #000000;
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 3.6rem;
+	font-weight: bold;
+
+}
+
+h2 {
+	font-size: 2.6rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+small {
+	font-size: 1.2rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.inner {
+	width: 820px;
+	margin: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.sns-icon-list {
+	display: flex;
+	justify-content: space-between;
+	width: 162px;
+	min-width: 0;
+}
+
+.sns-icon-item {
+	border-radius: 50%;
+	position: relative;
+	display: block;
+	width: 42px;
+	height: 42px;
+}
+
+.sns-icon-item img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.facebook-icon {
+	background-color:#3B5998;
+}
+
+.twitter-icon {
+	background-color:#55acee;
+}
+
+.google-plus-icon {
+	background-color:#dd4b39;
+}
+
+.apple-store-icon {
+	background-color:#26a6d1;
+}
+
+/*-----------------------------
+ *
+ * header-top
+ *
+-----------------------------*/
+
+.header-top {
+	background-color:#fff;
+}
+
+.header-top-box {
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 0 60px 0;
+}
+
+.header-top__logo {
+	display: block;
+	width: 229px;
+}
+
+.header-top__sns {
+	display: block;
+}
+
+/*-----------------------------
+ *
+ * header-main
+ *
+-----------------------------*/
+
+.header-main {
+	background-color:#3db39e;
+}
+
+.header-main-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-main__info {
+	display: block;
+	width: 400px;
+	padding-top: 145px;
+	color: #fff;
+}
+
+.header-main__eyecatch {
+	display: block;
+	width: 290px;
+	margin-top: 75px;
+}
+
+.header-main__info-title {
+	letter-spacing: -1px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.header-main__info-leading {
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.header-main__info-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-main__info-item {
+	display: block;
+	min-width: 0;
+}
+
+.button {
+	display: block;
+	width: 175px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding: 14px;
+}
+
+.download {
+ 	color: #50B7D9;
+ 	background: #fff;
+ 	border-radius: 7px;
+	text-transform: uppercase;
+}
+
+.learn_more {
+	color: #fff;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+/*-----------------------------
+ *
+ * mainエリア
+ *
+-----------------------------*/
+
+.section-title {
+	margin-bottom: 24px;
+}
+
+.section-paragraph {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 60px;
+}
+
+.section-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-box__item {
+	display: block;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+/*-----------------------------
+ *
+ * feature
+ *
+-----------------------------*/
+
+.feature {
+	padding: 100px 0 100px 0;
+}
+
+.feature-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.feature-item {
+	display: block;
+	width: 240px;
+	padding-top: 10px;
+}
+
+.feature-item__icon {
+	width: 60px;
+	margin : 0 auto 22px auto;
+}
+
+.feature-item__title {
+	margin-bottom: 32px;
+	color: #324d5B;
+}
+
+.feature-item__text {
+	position: relative;
+	width: 238px;
+	font-size: 1.2rem;
+	line-height: 1.6;
+	color:#777777;
+}
+
+.feature-item__text::before{
+   content: "";
+   display: block;
+   width: 20px;
+   height: 2px;
+   background-color: #bbbbbb;
+   position: absolute;
+   top: -18px;
+   left: 110px;
+}
+
+/*-----------------------------
+ *
+ * universal
+ *
+-----------------------------*/
+
+.universal {
+	background-color: #f6f6f6;
+	padding: 100px 0 105px 0;
+}
+
+.universal__text {
+	width: 350px;
+	padding-top: 86px;
+}
+
+.universal__image {
+	width: 382px;
+	padding-top: 16px;
+}
+
+/*-----------------------------
+ *
+ * information
+ *
+-----------------------------*/
+
+.information {
+	background-color: #fff;
+	padding: 100px 0 36px 0;
+}
+
+.information-box {
+	padding: 0 40px;
+}
+
+/*-----------------------------
+ *
+ * subscribe
+ *
+-----------------------------*/
+
+.subscribe {
+	background-color: #26a6d1;
+	color: #fff;
+	padding: 100px 0 39px 0;
+}
+
+.subscribe__form-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 158px 0 158px;
+	margin-bottom: 24px;
+}
+
+.subscribe__form-item {
+	display: block;
+	padding: 14px;
+	border-radius: 7px;
+	background-color: #fff;
+}
+
+.email {
+	width: 350px;
+	font-size: 1.5rem;
+}
+
+.submit {
+	width: 138px;
+	font-size: 1.7rem;
+	font-weight: bold;
+	color: #50b7d9;
+	text-transform: uppercase;
+}
+
+/*-----------------------------
+ *
+ * footerエリア
+ *
+-----------------------------*/
+
+.footer {
+	padding: 80px 0 100px 0;
+}
+
+.footer-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__logo-icon,
+.footer__apple-store,
+.footer__copyright,
+.footer__sns {
+	display: block;
+}
+
+.footer__logo-icon img {
+	width: 56px;
+}
+
+.footer__apple-store {
+	padding-left: 64px;
+}
+
+.footer__apple-store-text {
+	font-size: 1.2rem;
+	color: #26a6d1;
+	text-decoration: underline;
+	position: relative;
+}
+
+.apple-store-icon {
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	top: -8px;
+	left: -40px;
+}
+
+.apple_store_icon img {
+	width: 18px;
+}
+
+.footer__copyright {
+	padding-right: 64px;
+	padding-bottom: 8px;
+	margin: 0;
+}
+
+.footer__copyright-brand-name {
+	color: #44b5a1;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.sp-footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 460px;
+}
+
+/*-----------------------------
+ *
+ * responsive
+ *
+-----------------------------*/
+
+@media screen and (max-width:768px) {
+	/* 1vw = 7.5px(750/100) */
+	
+	body {
+		font-size: 2vw;
+	}
+	
+	h1 {
+		font-size: 5.07vw;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 4vw;
+	}
+
+	h3 {
+		font-size: 2.4vw;
+		font-weight: bold;
+		line-height: 1.5;
+	}
+
+	p {
+		font-size: 2vw;
+	}
+
+	small {
+		font-size: 1.73vw;
+	}
+
+	.inner {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 7.47vw;
+		text-align: center;
+	}
+	
+	.sns-icon-list {
+		width: 21.6vw;
+	}
+
+	.sns-icon-item {
+		width: 5.6vw;
+		height: 5.6vw;
+	}
+	
+	/*-----------------------------
+	 *
+	 * header-top
+	 *
+	-----------------------------*/
+	
+	.header-top-box {
+		display: block;
+		padding: 9.07vw 0;
+	}
+
+	.header-top__logo {
+		max-width: 36vw;
+		margin: 0 auto;
+	}
+	
+	.header-top__sns {
+		display: none;
+	}
+	
+	/*-----------------------------
+	 *
+	 * header-main
+	 *
+	-----------------------------*/
+
+	.header-main-box {
+		display: block;
+		text-align: center;
+	}
+
+	.header-main__info {
+		width: 100%;
+		padding-top: 8.67vw;
+	}
+
+	.header-main__eyecatch {
+		max-width: 44.67vw;
+		margin: 0 auto;
+	}
+
+	.header-main__info-title {
+		line-height: 1.3;
+		letter-spacing: 0.13vw;
+		margin-bottom: 4.8vw;
+	}
+	
+	.header-main__info-leading {
+		font-size: 2.4vw;
+		margin-bottom: 5.33vw;
+	}
+	
+	.header-main__info-list {
+		margin: 0 auto 8vw auto;
+		padding-left: 6.4vw;
+		max-width: 61.33vw;
+	}
+
+	.button {
+		max-width: 26.67vw;
+		font-size: 2.5vw;
+		padding: 2.13vw;
+	}
+
+	.download {
+		border-radius: 5px;
+	}
+	
+	
+	/*-----------------------------
+	 *
+	 * main
+	 *
+	-----------------------------*/
+	
+	.section-title {
+		margin-bottom: 4vw;
+	}
+				
+	.section-paragraph {
+		font-size: 2.27vw;
+		margin-bottom: 0;
+	}
+	
+	/*-----------------------------
+	 *
+	 * feature
+	 *
+	-----------------------------*/
+
+	.feature {
+		padding: 14.67vw 0 9.33vw;
+	}
+	
+	.feature .section-paragraph {
+		margin-bottom: 9.33vw;
+	}
+
+	.feature-list {
+		display: block;
+	}
+
+	.feature-item {
+		padding-top: 1.6vw;
+		margin-bottom: 5.33vw;
+		width: 100%;
+	}
+	
+	.feature-item__icon {
+		width: 13.33vw;
+		margin : 0 auto 3.2vw auto;
+	}
+	
+	.feature-item__title {
+		font-size: 2.4vw;
+		margin-bottom: 2.27vw;
+	}
+
+	.feature-item__text {
+		font-size: 1.87vw;
+		width: 100%;
+	}
+
+	.feature-item__text::before{
+	   	content: "";
+	   	display: block;
+	   	width: 3.2vw;
+	   	height: 0.27vw;
+		position: static;
+		margin: 0 auto 2.27vw auto;
+	}
+	
+	/*-----------------------------
+	 *
+	 * universal
+	 *
+	-----------------------------*/
+	
+	.universal {
+		padding: 8.53vw 0 0;
+	}
+	
+	.unniversal .inner {
+		padding: 0 2.67vw;
+	}
+	
+	.universal .section-paragraph {
+		margin-bottom: 5.6vw; /*42px*/
+	}
+	
+	.universal .section-box {
+		display: block;
+	}
+
+	.universal__text {
+		width: 100%;
+		padding: 0;
+	}
+
+	.universal__image {
+		margin: 0 auto;
+		max-width: 58.67vw;
+	}
+	
+	/*-----------------------------
+	 *
+	 * information
+	 *
+	-----------------------------*/
+	
+	.information {
+		padding: 14.4vw 0;
+	}
+	
+	.information .inner {
+		padding: 0 2.67vw;
+	}
+	
+	.information .section-title {
+		line-height: 1.4;
+		margin-bottom: 3.07vw;
+	}
+	
+	.information .section-paragraph {
+		margin: 0 auto;
+		max-width: 77.33vw;
+	}
+
+	.information-box {
+		width: 100%;
+		padding: 0;
+	}
+
+	/*-----------------------------
+	 *
+	 * subscribe
+	 *
+	-----------------------------*/
+	
+	.subscribe {
+		padding: 14.93vw 0;
+	}
+	
+	.subscribe .section-title {
+		margin-bottom: 5.6vw;
+	}
+
+	.subscribe__form-list {
+		padding: 0;
+		margin: 0 auto 4.27vw auto;
+		max-width: 50.67vw;
+	}
+	
+	.subscribe__form-item {
+		padding: 2vw;
+	}
+
+	.email {
+		font-size: 2.4vw;
+		width: 26.67vw;
+	}
+
+	.submit {
+		font-size: 2.66vw;
+		width: 21.33vw;
+	}
+	
+	/*-----------------------------
+	 *
+	 * footerエリア
+	 *
+	-----------------------------*/
+	
+	.footer {
+		padding: 0;
+		background-color: #f6f6f6;
+	}
+
+	.footer-box {
+		display: block;
+	}
+
+	.footer__logo-icon {
+		display: none;
+	}
+	
+	.sp-footer-top {
+		/* @see https://qiita.com/2x2no/items/12d0d87b38b19d1a28af */
+		margin-left: calc(((100vw - 100%) / 2) * -1);
+		margin-right: calc(((100vw - 100%) / 2) * -1);
+		background-color: #fff;
+	}
+	
+	.footer__apple-store {
+		width: 21.33vw;
+		margin: 0 auto;
+		padding: 12.27vw 0 12.27vw 6.4vw;
+	}
+
+	.footer__apple-store-text {
+		font-size: 1.87vw;
+	}
+
+	.apple-store-icon {
+		width: 4.8vw;
+		height: 4.8vw;
+		top: -1.47vw;
+		left: -5.33vw;
+	}
+
+	.apple_store_icon img {
+		width: 2.4vw;
+	}
+
+	.sp-footer-bottom {
+		display: block;
+		padding: 12vw 0 12vw;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.footer__copyright {
+		padding: 0;
+		margin-bottom: 4.8vw;
+	}
+	
+	.footer__sns .sns-icon-list {
+		margin: 0 auto;
+		width: 25.33;
+		min-width: 0;
+	}
+	
+	.footer__sns .sns-icon-item {
+		width: 6.4vw;
+		height: 6.4vw;
+	}
+}
