@@ -45,6 +45,13 @@ img {
 	margin: auto;
 }
 
+@media screen and (min-width:768px) and (max-width:824px) {
+	 .inner {
+		width: 100%;
+		margin: auto;
+	}
+}
+
 .text-center {
 	text-align: center;
 }
@@ -53,7 +60,6 @@ img {
 	display: flex;
 	justify-content: space-between;
 	width: 162px;
-	min-width: 0;
 }
 
 .sns-icon-item {
@@ -313,7 +319,7 @@ img {
 .subscribe__form-list {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 158px 0 158px;
+	padding: 10px 158px 0;
 	margin-bottom: 24px;
 }
 
@@ -322,6 +328,11 @@ img {
 	padding: 14px;
 	border-radius: 7px;
 	background-color: #fff;
+	margin-right: 20px;
+}
+
+.subscribe__form-item:last-of-type {
+	margin-right: 0;
 }
 
 .email {
@@ -747,12 +758,15 @@ img {
 	
 	.footer__sns .sns-icon-list {
 		margin: 0 auto;
-		width: 25.33;
-		min-width: 0;
+		width: 25.33vw;
 	}
 	
 	.footer__sns .sns-icon-item {
 		width: 6.4vw;
 		height: 6.4vw;
+	}
+
+	.sns-icon-item img {
+		max-width: 2.4vw;
 	}
 }
