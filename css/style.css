@@ -2,771 +2,419 @@
 /* CSS Document */
 
 html {
-	font-size: 62.5%;/*16px×62.5%=10px*/
+  font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
-	font-family:'Arial','メイリオ', 'Meiryo','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
-	color: #000000;
-	font-size: 1.6rem;
-}
-
-h1 {
-	font-size: 3.6rem;
-	font-weight: bold;
-
+	font-family: "Sawarabi Mincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.2em;
+	color: #EEECE8;
 }
 
 h2 {
-	font-size: 2.6rem;
-}
-
-h3 {
-	font-size: 1.6rem;
-	font-weight: bold;
-	line-height: 1.5;
+	font-size: 3.125vw; /* 40px */
+	font-weight: 700;
 }
 
 p {
-	font-size: 1.6rem;
+	font-size: 1.5625vw; /* 20px */
 }
 
 small {
-	font-size: 1.2rem;
+	font-size: 1.015625vw; /* 13px */
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-.inner {
-	width: 820px;
-	margin: auto;
-}
-
-@media screen and (min-width:768px) and (max-width:824px) {
-	 .inner {
-		width: 100%;
-		margin: auto;
-	}
-}
-
-.text-center {
-	text-align: center;
-}
-
-.sns-icon-list {
-	display: flex;
-	justify-content: space-between;
-	width: 162px;
-}
-
-.sns-icon-item {
-	border-radius: 50%;
-	position: relative;
-	display: block;
-	width: 42px;
-	height: 42px;
-}
-
-.sns-icon-item img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-
-.facebook-icon {
-	background-color:#3B5998;
-}
-
-.twitter-icon {
-	background-color:#55acee;
-}
-
-.google-plus-icon {
-	background-color:#dd4b39;
-}
-
-.apple-store-icon {
-	background-color:#26a6d1;
-}
-
-/*-----------------------------
- *
- * header-top
- *
------------------------------*/
-
-.header-top {
-	background-color:#fff;
-}
-
-.header-top-box {
-	display: flex;
-	justify-content: space-between;
-	padding: 60px 0 60px 0;
-}
-
-.header-top__logo {
-	display: block;
-	width: 229px;
-}
-
-.header-top__sns {
-	display: block;
-}
-
-/*-----------------------------
- *
- * header-main
- *
------------------------------*/
-
-.header-main {
-	background-color:#3db39e;
-}
-
-.header-main-box {
-	display: flex;
-	justify-content: space-between;
-}
-
-.header-main__info {
-	display: block;
-	width: 400px;
-	padding-top: 145px;
-	color: #fff;
-}
-
-.header-main__eyecatch {
-	display: block;
-	width: 290px;
-	margin-top: 75px;
-}
-
-.header-main__info-title {
-	letter-spacing: -1px;
-	margin-bottom: 30px;
-	line-height: 1.5;
-	text-transform: uppercase;
-}
-
-.header-main__info-leading {
-	line-height: 1.6;
-	margin-bottom: 30px;
-}
-
-.header-main__info-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.header-main__info-item {
-	display: block;
-	min-width: 0;
-}
-
-.button {
-	display: block;
-	width: 175px;
-	font-size: 1.8rem;
-	font-weight: bold;
-	padding: 14px;
-}
-
-.download {
- 	color: #50B7D9;
- 	background: #fff;
- 	border-radius: 7px;
-	text-transform: uppercase;
-}
-
-.learn_more {
-	color: #fff;
-	text-decoration: underline;
-	text-transform: uppercase;
-}
-
-/*-----------------------------
- *
- * mainエリア
- *
------------------------------*/
-
-.section-title {
-	margin-bottom: 24px;
-}
-
-.section-paragraph {
-	font-size: 1.5rem;
-	line-height: 1.5;
-	margin-bottom: 60px;
-}
-
-.section-box {
-	display: flex;
-	justify-content: space-between;
-}
-
-.section-box__item {
-	display: block;
-}
-
-.reverse {
-	flex-direction: row-reverse;
-}
-
-/*-----------------------------
- *
- * feature
- *
------------------------------*/
-
-.feature {
-	padding: 100px 0 100px 0;
-}
-
-.feature-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.feature-item {
-	display: block;
-	width: 240px;
-	padding-top: 10px;
-}
-
-.feature-item__icon {
-	width: 60px;
-	margin : 0 auto 22px auto;
-}
-
-.feature-item__title {
-	margin-bottom: 32px;
-	color: #324d5B;
-}
-
-.feature-item__text {
-	position: relative;
-	width: 238px;
-	font-size: 1.2rem;
-	line-height: 1.6;
-	color:#777777;
-}
-
-.feature-item__text::before{
-   content: "";
-   display: block;
-   width: 20px;
-   height: 2px;
-   background-color: #bbbbbb;
-   position: absolute;
-   top: -18px;
-   left: 110px;
-}
-
-/*-----------------------------
- *
- * universal
- *
------------------------------*/
-
-.universal {
-	background-color: #f6f6f6;
-	padding: 100px 0 105px 0;
-}
-
-.universal__text {
-	width: 350px;
-	padding-top: 86px;
-}
-
-.universal__image {
-	width: 382px;
-	padding-top: 16px;
-}
-
-/*-----------------------------
- *
- * information
- *
------------------------------*/
-
-.information {
-	background-color: #fff;
-	padding: 100px 0 36px 0;
-}
-
-.information-box {
-	padding: 0 40px;
-}
-
-/*-----------------------------
- *
- * subscribe
- *
------------------------------*/
-
-.subscribe {
-	background-color: #26a6d1;
-	color: #fff;
-	padding: 100px 0 39px 0;
-}
-
-.subscribe__form-list {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 158px 0;
-	margin-bottom: 24px;
-}
-
-.subscribe__form-item {
-	display: block;
-	padding: 14px;
-	border-radius: 7px;
-	background-color: #fff;
-	margin-right: 20px;
-}
-
-.subscribe__form-item:last-of-type {
-	margin-right: 0;
-}
-
-.email {
-	width: 350px;
-	font-size: 1.5rem;
-}
-
-.submit {
-	width: 138px;
-	font-size: 1.7rem;
-	font-weight: bold;
-	color: #50b7d9;
-	text-transform: uppercase;
-}
-
-/*-----------------------------
- *
- * footerエリア
- *
------------------------------*/
-
-.footer {
-	padding: 80px 0 100px 0;
-}
-
-.footer-box {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.footer__logo-icon,
-.footer__apple-store,
-.footer__copyright,
-.footer__sns {
-	display: block;
-}
-
-.footer__logo-icon img {
-	width: 56px;
-}
-
-.footer__apple-store {
-	padding-left: 64px;
-}
-
-.footer__apple-store-text {
-	font-size: 1.2rem;
-	color: #26a6d1;
-	text-decoration: underline;
-	position: relative;
-}
-
-.apple-store-icon {
-	width: 30px;
-    height: 30px;
-	position: absolute;
-	top: -8px;
-	left: -40px;
-}
-
-.apple_store_icon img {
-	width: 18px;
-}
-
-.footer__copyright {
-	padding-right: 64px;
-	padding-bottom: 8px;
-	margin: 0;
-}
-
-.footer__copyright-brand-name {
-	color: #44b5a1;
-	font-weight: bold;
-	text-decoration: underline;
-	text-transform: uppercase;
-}
-
-.sp-footer-bottom {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 460px;
-}
-
-/*-----------------------------
- *
- * responsive
- *
------------------------------*/
-
-@media screen and (max-width:768px) {
-	/* 1vw = 7.5px(750/100) */
-	
-	body {
-		font-size: 2vw;
-	}
-	
-	h1 {
-		font-size: 5.07vw;
-		font-weight: bold;
-	}
-
+@media screen and (min-width: 1281px) {
 	h2 {
-		font-size: 4vw;
-	}
-
-	h3 {
-		font-size: 2.4vw;
-		font-weight: bold;
-		line-height: 1.5;
+		font-size: 40px;
 	}
 
 	p {
-		font-size: 2vw;
+		font-size: 20px;
 	}
 
 	small {
-		font-size: 1.73vw;
+		font-size: 13px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	background-image: url("../images/pc/background@2x.png");
+	background-size: cover;
+}
+
+img {
+	max-width: 100vw;
+	vertical-align: bottom;
+}
+
+ul {
+	list-style: none;
+}
+
+/** header **/
+
+
+
+.header{
+	position: fixed;
+  height: 6.25vw; /*80px*/
+  width: 100vw;
+  z-index: 999; /*最前面へ*/
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	background: rgba(41, 29, 29, 0.6);
+  text-align: center;
+	padding: 1.563vw 0;
+}
+
+
+.header-logo {
+	display: block;
+	margin: 0;
+	padding-top: 0.9375vw; /* 12px */
+	padding-left: 3.75vw; /* 48px */
+}
+
+.header-logo img {
+	width: 33.90625vw; /* 434px */
+}
+
+.header-gnavList {
+	padding-left: 0;
+  display: flex;
+  justify-content: center;
+	padding-right: 3.75vw; /* 48px */
+}
+
+.header-gnavList li {
+	margin: 1.09375vw; /* 14px */
+}
+
+.header-gnavList li:first-child {
+	margin-left: 0;
+}
+
+.header-gnavList li:last-child {
+	margin-right: 0;
+}
+
+.header-gnavList li a {
+  display: block;
+	font-size: 1.6vw; /* 24px */
+	font-weight: 500;
+	color: #EEECE8;
+}
+
+@media screen and (min-width: 1281px) {
+	.header{
+		height: 80px;
+		padding: 20px 0;
 	}
 
-	.inner {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 0 7.47vw;
-		text-align: center;
-	}
-	
-	.sns-icon-list {
-		width: 21.6vw;
+	.header-logo {
+		padding-top: 12px;
+		padding-left: 48px;
 	}
 
-	.sns-icon-item {
-		width: 5.6vw;
-		height: 5.6vw;
-	}
-	
-	/*-----------------------------
-	 *
-	 * header-top
-	 *
-	-----------------------------*/
-	
-	.header-top-box {
-		display: block;
-		padding: 9.07vw 0;
+	.header-logo img {
+		width: 434px;
 	}
 
-	.header-top__logo {
-		max-width: 36vw;
-		margin: 0 auto;
-	}
-	
-	.header-top__sns {
-		display: none;
-	}
-	
-	/*-----------------------------
-	 *
-	 * header-main
-	 *
-	-----------------------------*/
-
-	.header-main-box {
-		display: block;
-		text-align: center;
+	.header-gnavList {
+		padding-right: 48px;
 	}
 
-	.header-main__info {
-		width: 100%;
-		padding-top: 8.67vw;
+	.header-gnavList li {
+		margin: 14px;
 	}
 
-	.header-main__eyecatch {
-		max-width: 44.67vw;
-		margin: 0 auto;
+	.header-gnavList li a {
+		font-size: 24px;
+	}
+}
+
+
+/* ハンバーガーメニュー */
+/*
+#menubtn img{
+	width: 100%;
+	max-width: 50px;
+}
+.w1000{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+nav{
+	background-color: #ccc;
+	padding: 20px 3%;
+}
+
+.nav-input{
+	display: none;
+}
+
+.nav-hidden{
+	display: none;
+}
+*/
+
+
+/*** main ***/
+
+.section {
+	margin: 0 auto;
+}
+
+.subheading {
+	background-color: #4A3E3E;
+	padding: 2.5vw; /* 32px */
+}
+
+.subtitle {
+	margin: 0;
+	text-align: center;
+}
+
+@media screen and (min-width: 1281px) {
+	.subheading {
+		padding: 32px;
+	}
+}
+
+/*** top ***/
+
+.top-description {
+	position: relative;
+}
+
+.top-text-box {
+	position: absolute;
+	width: 100%;
+	top: 66%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.top-text-box p {
+	display: inline;
+	background: linear-gradient(transparent 50%, rgba(158, 126, 87, 0.2) 50%);
+}
+
+.top-text-box p span {
+	font-size: 2.1875vw; /* 28px*/
+	text-shadow: 4px 4px 2px #70662F;
+}
+
+.top-img-box {
+	height: 62.5vw; /*800px*/
+}
+
+/* リンク */
+/***追従するトップへ戻るボタン***/
+.campaign-link {
+	position: fixed;
+	right: 2.03125vw; /* 26px */
+	bottom: 2.34375vw; /* 30px */
+	width: 18.59375vw; /* 238px */
+	height: 18.59375vw; /* 238px */
+	text-align: center;
+	z-index: 998;
+	background:rgba(166, 167, 0, 0.8);
+	border: solid 0px;
+	border-radius: 100%;
+	box-shadow: 0 2px 10px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
+}
+
+.campaign-link p{
+	font-size: 2.5vw; /*32px */
+	line-height: 1.5;
+	color: #EEECE8;
+	padding-top: 1.8vw; /* 23px */
+}
+/***トップへ戻るボタンここまで***/
+
+@media screen and (min-width: 1281px) {
+	.top-text-box p {
+		font-size: 28px; /* 28px*/
 	}
 
-	.header-main__info-title {
-		line-height: 1.3;
-		letter-spacing: 0.13vw;
-		margin-bottom: 4.8vw;
-	}
-	
-	.header-main__info-leading {
-		font-size: 2.4vw;
-		margin-bottom: 5.33vw;
-	}
-	
-	.header-main__info-list {
-		margin: 0 auto 8vw auto;
-		padding-left: 6.4vw;
-		max-width: 61.33vw;
+	.campaign-link {
+		width: 238px;
+		height: 238px;
 	}
 
-	.button {
-		max-width: 26.67vw;
-		font-size: 2.5vw;
-		padding: 2.13vw;
+	.campaign-link p{
+		font-size: 32px;
+		padding-top: 23px;
+	}
+}
+
+
+/*** concept ***/
+
+.concept-description {
+	margin: 0 auto;
+	position: relative;
+}
+
+.concept-text-box {
+	padding: 1.5625vw; /* 20px */
+	position: absolute;
+	width: 100%;
+	top: 0;
+	background-color: rgba(74, 62, 62, 0.6 );
+}
+
+.concept-text-box p {
+	text-align: center;
+}
+
+@media screen and (min-width: 1281px) {
+	.concept-text-box {
+		padding: 20px;
+	}
+}
+
+/*** map ***/
+
+
+.map-text-box {
+	padding: 1.5625vw; /* 20px */
+	width: 100%;
+	top: 0;
+	background-color: rgba(74, 62, 62, 0.6 );
+}
+
+.map-text-box p {
+	text-align: center;
+}
+
+.google-maps {
+	width: 100%;
+	height: 31.25vw; /* 400px */
+}
+
+.google-maps iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 1281px) {
+	.map-text-box {
+		padding: 20px;
 	}
 
-	.download {
-		border-radius: 5px;
+	.google-maps {
+		height: 400px;
 	}
-	
-	
-	/*-----------------------------
-	 *
-	 * main
-	 *
-	-----------------------------*/
-	
-	.section-title {
-		margin-bottom: 4vw;
-	}
-				
-	.section-paragraph {
-		font-size: 2.27vw;
-		margin-bottom: 0;
-	}
-	
-	/*-----------------------------
-	 *
-	 * feature
-	 *
-	-----------------------------*/
+}
 
-	.feature {
-		padding: 14.67vw 0 9.33vw;
-	}
-	
-	.feature .section-paragraph {
-		margin-bottom: 9.33vw;
-	}
 
-	.feature-list {
-		display: block;
-	}
+/*** footer ***/
 
-	.feature-item {
-		padding-top: 1.6vw;
-		margin-bottom: 5.33vw;
-		width: 100%;
-	}
-	
-	.feature-item__icon {
-		width: 13.33vw;
-		margin : 0 auto 3.2vw auto;
-	}
-	
-	.feature-item__title {
-		font-size: 2.4vw;
-		margin-bottom: 2.27vw;
-	}
+.footer {
+	margin: 0 auto;
+	padding: 3.75vw 0 2.1875vw; /* 48px 28px */
+	background-color: #291D1D;
+	text-align: center;
+}
 
-	.feature-item__text {
-		font-size: 1.87vw;
-		width: 100%;
-	}
+.footer-sns {
+	margin-bottom: 3.75vw; /* 48px */
+	text-align: center;
+}
 
-	.feature-item__text::before{
-	   	content: "";
-	   	display: block;
-	   	width: 3.2vw;
-	   	height: 0.27vw;
-		position: static;
-		margin: 0 auto 2.27vw auto;
-	}
-	
-	/*-----------------------------
-	 *
-	 * universal
-	 *
-	-----------------------------*/
-	
-	.universal {
-		padding: 8.53vw 0 0;
-	}
-	
-	.unniversal .inner {
-		padding: 0 2.67vw;
-	}
-	
-	.universal .section-paragraph {
-		margin-bottom: 5.6vw; /*42px*/
-	}
-	
-	.universal .section-box {
-		display: block;
-	}
+.footer-sns a {
+	display: inline-block;
+	margin: 0 1.5625vw; /*20px */
+}
 
-	.universal__text {
-		width: 100%;
-		padding: 0;
-	}
+.footer-sns img {
+	vertical-align: middle;
+	width: 6.875vw; /*88px */
+}
 
-	.universal__image {
-		margin: 0 auto;
-		max-width: 58.67vw;
-	}
-	
-	/*-----------------------------
-	 *
-	 * information
-	 *
-	-----------------------------*/
-	
-	.information {
-		padding: 14.4vw 0;
-	}
-	
-	.information .inner {
-		padding: 0 2.67vw;
-	}
-	
-	.information .section-title {
-		line-height: 1.4;
-		margin-bottom: 3.07vw;
-	}
-	
-	.information .section-paragraph {
-		margin: 0 auto;
-		max-width: 77.33vw;
-	}
+.footer-copyright {
+	margin: 0;
+}
 
-	.information-box {
-		width: 100%;
-		padding: 0;
-	}
-
-	/*-----------------------------
-	 *
-	 * subscribe
-	 *
-	-----------------------------*/
-	
-	.subscribe {
-		padding: 14.93vw 0;
-	}
-	
-	.subscribe .section-title {
-		margin-bottom: 5.6vw;
-	}
-
-	.subscribe__form-list {
-		padding: 0;
-		margin: 0 auto 4.27vw auto;
-		max-width: 50.67vw;
-	}
-	
-	.subscribe__form-item {
-		padding: 2vw;
-	}
-
-	.email {
-		font-size: 2.4vw;
-		width: 26.67vw;
-	}
-
-	.submit {
-		font-size: 2.66vw;
-		width: 21.33vw;
-	}
-	
-	/*-----------------------------
-	 *
-	 * footerエリア
-	 *
-	-----------------------------*/
-	
+@media screen and (min-width: 1281px) {
 	.footer {
-		padding: 0;
-		background-color: #f6f6f6;
+		padding: 48px 0 28px;
 	}
 
-	.footer-box {
-		display: block;
+	.footer-sns {
+		margin-bottom: 48px;
 	}
 
-	.footer__logo-icon {
-		display: none;
+	.footer-sns a {
+		margin: 0 20px;
 	}
-	
-	.sp-footer-top {
-		/* @see https://qiita.com/2x2no/items/12d0d87b38b19d1a28af */
-		margin-left: calc(((100vw - 100%) / 2) * -1);
-		margin-right: calc(((100vw - 100%) / 2) * -1);
-		background-color: #fff;
+
+	.footer-sns img {
+		width: 88px;
 	}
-	
-	.footer__apple-store {
-		width: 21.33vw;
+}
+
+
+/** レスポンシブ対応 **/
+
+@media screen and (max-width: 375px) {
+	body {
+		line-height: 1.5;
+	}
+
+	h2 {
+		font-size: 5.86666666667vw; /* 22px */
+		letter-spacing: 0.2em;
+	}
+
+	p {
+		font-size: 3.73333333333vw; /* 14px */
+		letter-spacing: -0.1em;
+	}
+
+	small {
+		font-size: 2.93333333333vw; /* 11px */
+	}
+
+	.section {
 		margin: 0 auto;
-		padding: 12.27vw 0 12.27vw 6.4vw;
 	}
 
-	.footer__apple-store-text {
-		font-size: 1.87vw;
+	.subheading {
+		padding: 4.8vw; /* 18px */
 	}
 
-	.apple-store-icon {
-		width: 4.8vw;
-		height: 4.8vw;
-		top: -1.47vw;
-		left: -5.33vw;
+	/*** concept ***/
+
+	.concept-text-box {
+		padding: 3.2vw; /* 12px */
 	}
 
-	.apple_store_icon img {
-		width: 2.4vw;
+	.concept-img-box {
+		height: 100vw;
 	}
 
-	.sp-footer-bottom {
-		display: block;
-		padding: 12vw 0 12vw;
-		margin: 0 auto;
-		width: 100%;
-	}
-	
-	.footer__copyright {
-		padding: 0;
-		margin-bottom: 4.8vw;
-	}
-	
-	.footer__sns .sns-icon-list {
-		margin: 0 auto;
-		width: 25.33vw;
-	}
-	
-	.footer__sns .sns-icon-item {
-		width: 6.4vw;
-		height: 6.4vw;
+	/*** map ***/
+
+	.map-text-box {
+		padding: 3.2vw; /* 12px */
 	}
 
-	.sns-icon-item img {
-		max-width: 2.4vw;
+	.google-maps {
+		height: 100vw; /* 375px */
 	}
 }
