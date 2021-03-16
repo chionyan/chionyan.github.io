@@ -209,7 +209,7 @@ th, td {
 .menu-btn {
 	position: fixed;
 	top: 10px;
-	right: 10px;
+	right: 2.85714285714vw; /* 10px */
 	display: flex;
 	height: 60px;
 	width: 60px;
@@ -309,7 +309,7 @@ th, td {
 /*PAGE TOPボタン追加*/
 #page_top {
 	position: fixed;
-	right: 10px;
+	right: 2.85714285714vw; /* 10px */
 	bottom: 30px;
 	display: flex;
 	width: 50px;
@@ -317,7 +317,6 @@ th, td {
 	justify-content: center;
 	align-items: center;
 	z-index: 97;
-
 	background: #333; /*ボタンの色*/
 	opacity: 0.6;
 	border-radius: 50%; /*角の丸み*/
