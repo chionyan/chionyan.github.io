@@ -3,120 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Italian Dining -SHU-</title>
-
-<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+<title>デザイン四原則</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen">
 <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen">
-
 </head>
 
+
 <body>
-	<header id="header" class="header">
-		<h1 class="header-logo"><a href="#top"><img src="./images/pc/logo.png" alt="Italian Dining -SHU-のロゴ"></a></h1>
-		<nav class="header-gnav">
-			<ul class="header-gnavList">
-				<li><a href="#campaign">キャンペーン</a></li>
-				<li><a href="#concept">コンセプト</a></li>
-				<li><a href="#access">アクセス</a></li>
-			</ul>
-		</nav>
+
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <h1 class="header-logo">logo</h1>
+
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+      <nav class="menu-content">
+        <ul class="header-navList">
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#service">SERVICE</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- /header -->
 
-	<!-- main -->
-	<main class="contents">
-		<!-- top -->
-		<section id="top" class="top mv">
-			<div class="top-description">
-				<div class="top-text-box">
-					<p><span>40時間熟成させた国産小麦の生地でつくる本格マルゲリータ。<br>朝どれのバジルとともに。</span></p>
-				</div>
-
-				<div class="top-img-box">
-					<img src="./images/pc/pizza@2x.png" alt="トップ画像">
-				</div>
-			</div>
-
-			<a href="#campaign" class="campaign-link"><p>Web限定<br>クーポン<br>配布中</p></a>
-		</section>
-		<!-- /top -->
-
-		<div class="container"> <!-- コンテンツ用 -->
-			<!-- campaign -->
-			<section class="section" id="campaign">
-				<header class="subheading">
-					<h2 class="subtitle">キャンペーン情報</h2>
-				</header>
-
-				<div class="campaign-image">
-					<img src="./images/pc/coupon@2x.png" alt="開店記念クーポン">
-				</div>
-			</section>
-			<!-- /campaign -->
-
-			<!-- concept -->
-			<section class="section" id="concept">
-				<header class="subheading">
-					<h2 class="subtitle">お店のコンセプト</h2>
-				</header>
-
-				<div class="concept-description">
-					<div class="concept-text-box">
-						<p>オフィス街の隠れ家をコンセプトにおしゃれで落ち着いた店内です。<br>都会の喧騒から離れた一時を楽しくお過ごしください。</p>
-					</div>
-
-					<div class="concept-img-box">
-						<img src="./images/pc/shop@2x.png" alt="店内の様子"> <!-- 左右ネガティブマージン(ぶちぬき型) -->
-					</div>
-				</div>
-			</section>
-			<!-- /concept -->
-
-			<!-- access -->
-			<section class="section" id="access">
-				<header class="subheading">
-					<h2 class="subtitle">店舗情報・アクセス</h2>
-				</header>
+  <!-- main -->
+  <main>
+    <!-- top -->
+    <section id="top">
+      <img src="./images/top.jpg" alt="トップ画像">
+    </section>
+    <!-- /top -->
 
 
-				<div class="map-description">
-					<div class="map-text-box">
-						<p>〒121-0836<br>東京都足立区入谷1丁目2-8</p>
-					</div>
+    <!-- news -->
+    <section id="news" class="section">
+      <h2 class="subtitle">NEWS<br><span class="subtitle-jp">お知らせ</span></h2>
 
-					<div class="google-maps">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.8725736295364!2d139.76837801485718!3d35.803061480166015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601893d66315c4bd%3A0xe5f43a896ce69ea5!2z44CSMTIxLTA4MzYg5p2x5Lqs6YO96Laz56uL5Yy65YWl6LC377yR5LiB55uu77yS4oiS77yY!5e0!3m2!1sja!2sjp!4v1614611826022!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
-					</div>
+      <dl>
+        <dt>2021年1月20日（水）</dt>
+        <dd>就労移行支援事業所「atGPジョブトレIT・Web」船橋に開所いたしました。</dd>
+        <dt>2021年1月19日（火）</dt>
+        <dd>サイトオープンいたしました。</dd>
+        <dt>2021年1月18日（月）</dt>
+        <dd>毎日新聞にて弊社施設庁：藤のコメントが掲載されました。</dd>
+      </dl>
 
+      <a href="#news" class="news-more">もっと読む</a>
+    </section>
+    <!-- /news -->
 
-					<div class="map-text-box">
-						<p>日暮里舎人ライナー「舎人」駅から徒歩3分</p>
-					</div>
-				</div>
-			</section>
-			<!-- /access -->
-		</div><!-- コンテンツ用ここまで -->
+    <!-- service -->
+    <section id="service" class="section">
+      <h2 class="subtitle">SERVICE<br><span class="subtitle-jp">サービス</span></h2>
 
-	</main>
-	<!-- /main -->
+      <div class="service-content">
+        <img src="./images/service.jpg" alt="転職支援サービスの写真">
+        <h3>転職支援サービス</h3>
+        <p>転職アドバイザーが転職希望者のご希望を丁寧に伺うことで、条件に見合った求人を一緒に探し、就職までの無料サポートを行います。</p>
+      </div>
 
+      <div class="service-content">
+        <img src="./images/service.jpg" alt="就職支援・研修サービスの写真">
+        <h3>就職支援・研修サービス</h3>
+        <p>障がいのある方に向けた就職のためのスキルアップ研修や、就職活動のサポートを行っています。</p>
+      </div>
 
-	<!-- footer -->
-	<footer class="footer">
+      <div class="service-content">
+        <img src="./images/service.jpg" alt="求人情報サービスの写真">
+        <h3>求人情報サービス</h3>
+        <p>当社が運営する「アットジーピー求人情報サイト」にて、質・量ともに業界No.1(※)の求人情報を提供しています。</p>
+      </div>
+    </section>
+    <!-- /service -->
 
-		<div class="footer-sns">
-			<a href="#"><img src="./images/pc/twitter_icon.png" alt="twitterのアイコン"></a>
-			<a href="#"><img src="./images/pc/facebook_icon.png" alt="facebookのアイコン"></a>
-			<a href="#">		<img src="./images/pc/instagram_icon.png" alt="instagramのアイコン"></a>
-		</div>
+    <!-- about -->
+    <section id="about" class="section">
+      <h2 class="subtitle">ABOUT<br><span class="subtitle-jp">会社概要</span></h2>
 
+      <table>
+        <tr>
+          <th>事業所名</th>
+          <td>General Partners</td>
+        </tr>
+        <tr>
+          <th>住所</th>
+          <td>〒104-0031<br>東京都中央区京橋2丁目4番12号<br>京橋第一生命ビルディング3階</td>
+        </tr>
+        <tr>
+          <th>電話</th>
+          <td>TEL：03-3270-5500(代表)</td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td>at_gp@gmail.com</td>
+        </tr>
+      </table>
 
-		<p class="footer-copyright">
-			<small>Copyright &copy; 2021 Italian Dining -SHU-</small>
-		</p>
-	</footer>
-	<!-- /footer -->
-	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-	<!-- <script src="./js/script.js"></script> -->
+    </section>
+    <!-- /about -->
+
+  </main>
+  <!-- main -->
+
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">logo</p>
+      <div id="page_top"><a href="#"></a></div>
+      <small class="copyright">copyright &copy; General Partners</small>
+    </div>
+  </footer>
+  <!-- /footer -->
 </body>
 </html>
